@@ -6,7 +6,8 @@ import HeaderSocials from './HeaderSocials'
 
 function Header() {
   return (
-    <header>
+    
+        <header id ='home'>
         <div className="container header__container">
         <h5>Hello I'm</h5>
         <h1>Simran Dhaliwal</h1>
@@ -20,7 +21,7 @@ function Header() {
 
         <a href='#contact' className='scroll__down'>Scroll Down</a>
         </div>
-    </header>
+        </header>
   )
 }
 
