@@ -34,7 +34,7 @@ const Intro = () => {
                         I am a hardworking and dedicated individual who is always looking for new opportunities to learn and grow. 
                         I am currently looking for a co-op or intern position for the summer and/or fall of 2023.
           </p>
-          <a href="#contact" className="btn btn-primary">Let's Talk</a>
+          {/* <a href="#contact" className="btn btn-primary">Let's Talk</a> */}
         </div>
       </div>
     </section>
