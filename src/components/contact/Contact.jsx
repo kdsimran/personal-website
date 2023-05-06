@@ -6,9 +6,11 @@ import emailjs from 'emailjs-com';
 
 
 const Contact = () => {
+  const [message, setMessage] = React.useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
+    setMessage(true);
     e.preventDefault();
 
     emailjs.sendForm('service_y59qot8', 'template_dgln0nm', form.current, 'WdwcZYq2AEL0ExYFo')
@@ -39,6 +41,7 @@ const Contact = () => {
         <input type='email' name='Email' placeholder='Your Email' required /> 
         <textarea name='message' id='' rows={7} placeholder='Your Message' required ></textarea>
         <button type='submit' className= 'btn btn-primary'>Send Message</button> 
+        {message && <span> Thank you! I will reply as soon as I can. </span>}
       </form>
       </div>
     </section>
