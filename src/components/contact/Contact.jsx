@@ -1,8 +1,26 @@
 import React from 'react'
 import './contact.css'
 import {MdOutlineEmail} from 'react-icons/md'
+import { useRef } from 'react';
+import emailjs from 'emailjs-com';
+
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_y59qot8', 'template_dgln0nm', form.current, 'WdwcZYq2AEL0ExYFo')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      e.target.reset();
+  };
+
   return (
     <section id='contact'>
     <h5> Get in Touch</h5>
@@ -13,14 +31,14 @@ const Contact = () => {
       <MdOutlineEmail/> 
       <h4>Email</h4>
       <h5>kdsimran@umich.edu</h5>
-      <a href="mailto:kdsimran@umich.edu">Send a message</a>
+      <a href="mailto:kdsimran@umich.edu" target= "_blank">Send a message</a>
       </article>
       </div>
-      <form action=''>
+      <form ref={form} onSubmit={sendEmail}>
         <input type="text" name="Name" placeholder='Your Full Name' required />
-        <input type='email' name='Email' placeholder='Your Email' required />
+        <input type='email' name='Email' placeholder='Your Email' required /> 
         <textarea name='message' id='' rows={7} placeholder='Your Message' required ></textarea>
-        <button type='submit'></button>
+        <button type='submit' className= 'btn btn-primary'>Send Message</button> 
       </form>
       </div>
     </section>
