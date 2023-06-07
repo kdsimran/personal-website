@@ -1,7 +1,7 @@
 import React from 'react';
-import { BsFillPatchCheckFill } from 'react-icons/bs';
-import {TbBrandHtml5, TbBrandCss3, TbBrandJavascript, TbBrandReact} from 'react-icons/tb';
+import {TbBrandHtml5, TbBrandCss3, TbBrandJavascript, TbBrandReact, TbBrandMongodb, TbBrandBootstrap} from 'react-icons/tb';
 import {TbBrandCpp, TbBrandPython, TbBrandMysql, TbSquareLetterR, TbBrandGit} from 'react-icons/tb';
+import {SiMongodb} from 'react-icons/si';
 import './experience.css';
 
 const Experience = () => {
@@ -29,6 +29,10 @@ const Experience = () => {
               <TbBrandReact className="experience__details-icon" />
               <h4>React</h4>
             </article>
+            <article className="experience__details">
+              <TbBrandBootstrap className="experience__details-icon" />
+              <h4>Bootstrap</h4>
+            </article>
           </div>
         </div>
         <div className="experience__backend">
@@ -53,6 +57,10 @@ const Experience = () => {
             <article className="experience__details">
               <TbBrandGit className="experience__details-icon" />
               <h4>Git/GitHub</h4>
+            </article>
+            <article className="experience__details">
+              <TbBrandMongodb className="experience__details-icon" />
+              <h4>MongoDB</h4>
             </article>
           </div>
         </div>
