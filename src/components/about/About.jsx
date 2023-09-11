@@ -20,7 +20,8 @@ const Intro = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>1 year in Project Team</small>
+              <small>Software Engineer Intern at Wail of a Tale </small><br />
+              <small>Developer at Michigan Solar Car Team</small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
@@ -32,7 +33,7 @@ const Intro = () => {
           I am a Computer Science student at the University of Michigan. 
                         I have a passion for learning and developing new skills. 
                         I am a hardworking and dedicated individual who is always looking for new opportunities to learn and grow. 
-                        I am currently looking for a co-op or intern position for the summer and/or fall of 2023.
+                        I am currently looking for a full-time post graduate software engineer position with a grauation date of April 2024.
           </p>
           {/* <a href="#contact" className="btn btn-primary">Let's Talk</a> */}
         </div>
